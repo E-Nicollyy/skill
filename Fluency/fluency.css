@@ -1,0 +1,28 @@
+/* Suavização de seções */
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid #1a1a1a; /* Linha divisória quase invisível, mas que organiza o olhar */
+}
+
+/* Alertas azuis (Ação) - Deixando-os menos "gritantes" no fundo escuro */
+.alert-info {
+    background-color: #111d27; /* Azul marinho bem escuro */
+    border: none;
+    border-left: 4px solid #007bff;
+    color: #cce5ff; /* Texto azul claro para leitura no escuro */
+}
+
+/* Card Lilás (Dica) - Harmonia com o Roxo da Unico */
+.alert-lilac {
+    background-color: #1a1421; /* Roxo/Lilás muito profundo */
+    border: none;
+    border-left: 4px solid #8250b4;
+    color: #e1bee7; /* Texto lilás claro */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.explicacao, .img-fluid {
+    border: 5px solid #1a1a1a;
+    border-radius: 8px;
+    opacity: 0.95; /* Suaviza o brilho do branco do print */
+}

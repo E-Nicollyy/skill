@@ -1,0 +1,113 @@
+ /* Reset básico */
+        *{
+         margin: 0; padding: 0; font-family: sans-serif; 
+        }
+
+        .hero-section {
+            background-image: url('./src/image/Principal3.png');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh; /* Ocupa a tela toda */
+            color: white;
+            padding: 40px 8%; /* Ajuste o padding para alinhar com o logo da imagem */
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: flex-end; /* Empurra o menu para a direita */
+            align-items: center;
+            height: 50px; /* Altura aproximada onde está o texto "UNICO SKILL" */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .content {
+            margin-top: 100px; /* Ajuste para o texto não subir demais */
+            max-width: 500px;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: white;
+            color: black;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+
+/* Container de Serviços */
+.bg-black-custom {
+    background-color: #0d0d0d;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Títulos e Textos */
+h2.fw-bold {
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.text-muted {
+    color: #888 !important;
+    font-size: 1.1rem;
+}
+
+/* O Card: Fundo escuro e bordas suaves */
+.custom-card {
+    background-color: #161616 !important; /* Tom acima do fundo #0d0d0d */
+    border: 1px solid #252525 !important;
+    border-radius: 15px !important;
+    overflow: hidden; /* Garante que a imagem não saia das bordas arredondadas */
+    transition: all 0.3s ease;
+}
+
+/* Efeito de Hover: Apenas borda e sombra */
+.custom-card:hover {
+    transform: translateY(-8px);
+    border-color: #8250b4 !important; /* Roxo da Unico Skill */
+    box-shadow: 0 10px 25px rgba(130, 80, 180, 0.2);
+}
+
+/* Configuração da Imagem: Largura total e altura fixa */
+.card-img-top {
+    width: 100%; /* Ocupa toda a largura do card */
+    height: 250px; /* Trava a altura em 250px conforme solicitado */
+    object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer (corta as sobras) */
+    display: block;
+    padding: 0 !important; /* Remove o padding para a imagem encostar nas bordas */
+}
+
+/* Ajuste do Corpo do Card para harmonia */
+.card-body {
+    padding: 20px !important;
+    background-color: #161616;
+}
+
+.card-title {
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #adb5bd !important; /* Cinza claro para leitura */
+}
