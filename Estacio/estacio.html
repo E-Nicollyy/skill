@@ -1,137 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="icon" href="./src/image/logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluxos de Atendimento – Estácio</title>
+    <link rel="icon" href="./icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
 </head>
-<body class="">
 
-<section class="container my-5 text-black">
-  <div class="row mb-4">
+<body>
+
+<section class="container my-5 text-black" >
+
+  <!-- CABEÇALHO -->
+  <div class="row mb-5">
     <div class="col text-center">
-      <h2 class="fw-bold">Fluxos de Atendimento – Estácio</h2>
+      <h2 class="fw-bold text-black">Fluxos de Atendimento – Estácio</h2>
       <p class="text-muted">
-        Orientações sobre matrícula, rematrícula, cancelamento e cursos livres
+        Manual operacional para matrícula, rematrícula, cancelamento e cursos livres
       </p>
     </div>
   </div>
 
+  <!-- ================================================= -->
   <!-- FLUXO DE MATRÍCULA -->
+  <!-- ================================================= -->
+
   <div class="row mb-5">
     <div class="col">
-      <h4 class="fw-semibold">Fluxo de Matrícula</h4>
 
-      <p>O processo de matrícula da Estácio funciona da seguinte maneira:</p>
+      <h4 class="fw-semibold">1. Fluxo de Matrícula</h4>
+
+      <p><strong>Contexto:</strong> Colaborador realizou a inscrição e aguarda acesso ao curso.</p>
+
+      <h6 class="fw-bold mt-4">Passo inicial — Processo padrão</h6>
       <ol>
         <li>O colaborador realiza a inscrição pela <strong>Skill</strong>.</li>
-        <li>Aguarda alguns dias até que a inscrição seja efetivada pela <strong>Estácio</strong>.</li>
-        <li>Envia os documentos no portal da Estácio dentro do prazo exigido.</li>
-        <li>Após o envio, a matrícula é gerada.</li>
+        <li>A Estácio efetiva a inscrição após alguns dias.</li>
+        <li>O colaborador envia os documentos no portal da Estácio dentro do prazo.</li>
+        <li>Após o envio e aprovação, a matrícula é gerada.</li>
       </ol>
 
-      <!-- CONDIÇÃO -->
+      <!-- SITUAÇÃO 1 -->
       <div class="alert alert-info mt-4">
-        <strong>Se o colaborador entrar em contato informando que não recebeu os dados de acesso ao curso:</strong>
+        <strong>Situação 1: Colaborador não recebeu os dados de acesso</strong>
       </div>
 
+      <p><strong>Verificação:</strong></p>
       <ul>
-        <li>Acesse o  link:<span>
-        <a href="https://candidatos.portal.estacio.br/acompanhe-sua-matricula">https://candidatos.portal.estacio.br/acompanhe-sua-matricula
-        </a> </span> e insira o CPF do colaborador.</li>
-        <li>Copie o link exibido acima.</li>
-        <li>Envie ao colaborador e solicite um print da tela.</li>
+        <li>Acesse o link abaixo e informe o CPF do colaborador:</li>
       </ul>
 
-      <!-- IMAGEM -->
-      <div class="border rounded p-3 text-center text-muted mb-4">
-        <img src="../src/image/estaciocpf.png" alt="CPF Estácio" class="explicacao" >
+      <a class="text-decoration-none" href="https://candidatos.portal.estacio.br/acompanhe-sua-matricula">
+        https://candidatos.portal.estacio.br/acompanhe-sua-matricula
+      </a>
+
+      <p class="mt-3"><strong>Ação:</strong></p>
+      <ul>
+        <li>Copie o link exibido após a consulta.</li>
+        <li>Envie o link ao colaborador.</li>
+        <li>Solicite um print da tela.</li>
+      </ul>
+
+      <div class="border rounded p-3 text-center mb-4">
+        <img src="../src/image/estaciocpf.png" alt="Consulta CPF Estácio" class="" width="90%">
       </div>
 
-      <!-- CONDIÇÃO -->
+      <!-- SITUAÇÃO 2 -->
       <div class="alert alert-info">
-        <strong>Se ao buscar pelo CPF constar a tela abaixo:</strong>
+        <strong>Situação 2: CPF não localizado no sistema</strong>
       </div>
 
-      <!-- IMAGEM -->
-      <div class="border rounded p-3 text-center text-muted mb-3">
-        <img src="../src/image/semCpf.png" alt="Sem CPF" class="explicacao">
+      <div class="border rounded p-3 text-center mb-3">
+        <img src="../src/image/semCpf.png" alt="CPF não encontrado" width="70%">
       </div>
 
       <ul>
-        <li>Verifique todo o histórico no <strong>Zendesk</strong> e no <strong>ADMIN</strong>.</li>
-        <li>Avalie se cabe abertura de chamado para o time <strong>N2</strong>.</li>
+        <li>Verifique todo o histórico no <strong>Zendesk</strong>.</li>
+        <li>Verifique registros no <strong>ADMIN</strong>.</li>
+        <li>Avalie abertura de chamado para o time <strong>N2</strong>.</li>
       </ul>
 
-      <!-- CONDIÇÃO -->
+      <!-- SITUAÇÃO 3 -->
       <div class="alert alert-info mt-4">
-        <strong>Se o colaborador informar que já enviou os documentos, mas não recebeu acesso ao curso:</strong>
+        <strong>Situação 3: Documentos enviados, mas sem acesso ao curso</strong>
       </div>
 
       <ul>
-        <li>Sempre solicite um print para conferência.</li>
+        <li>Sempre solicite print para conferência.</li>
         <li>Verifique se os documentos estão enviados e aprovados.</li>
       </ul>
 
-      <!-- IMAGEM -->
-      <div class="border rounded p-3 text-center text-muted mb-3">
-        <img src="../src/image/envioDocumentos.jpg" alt="" class="" width="200px" height="400px">      
+      <div class="border rounded p-3 text-center mb-3">
+        <img src="../src/image/envioDocumentos.jpg" width="25%">
       </div>
 
       <p>
-        Caso todos os documentos estejam corretos como ilustra a imagem acima, acesse o 
-        <strong> 
-            <a href="https://sia.estacio.br/sianet/RecuperarMatricula/ListarMatriculas" class="text-decoration-none">
-             SIA: 
-            </a>
-        </strong> 
+        Caso todos os documentos estejam corretos, acesse o
+        <a class="text-decoration-none" href="https://sia.estacio.br/sianet/RecuperarMatricula/ListarMatriculas">
+          <strong>SIA</strong>
+        </a>
         para verificar se a matrícula foi gerada.
       </p>
 
-      <!-- CONDIÇÃO -->
+      <!-- SITUAÇÃO 4 -->
       <div class="alert alert-info mt-4">
-        <strong>Se a matrícula ainda não tiver sido gerada:</strong>
+        <strong>Situação 4: Matrícula ainda não gerada no SIA</strong>
       </div>
 
-            <!-- IMAGEM -->
-      <div class="border rounded p-3 text-center text-muted mb-3">
-        <img src="../src/image/Matricula.png" alt="">
-      </div>
-
-      <ul>
-        <li>
-          Solicite que o colaborador verifique no portal da Estácio, no ícone de perfil,
-          se aparece a data de início das aulas.
-        </li>
-      </ul>
-
-      <!-- IMAGEM -->
-      <div class="border rounded p-3 text-center text-muted mb-3">
-        📷 Imagem do perfil com data de início das aulas
+      <div class="border rounded p-3 text-center mb-3">
+        <img src="../src/image/Matricula.png" width="40%">
       </div>
 
       <ul>
-        <li>Se a data aparecer, ele deve apenas aguardar.</li>
-        <li>Em breve a matrícula será gerada e ele será notificado.</li>
-        <li>Caso a matrícula já tenha sido gerada, envie a macro correspondente:</li>
+        <li>Solicite que o colaborador verifique no perfil do portal da Estácio se consta a data de início das aulas.</li>
+        <li>Se a data aparecer, oriente que ele aguarde. Em breve será gerada a matrícula e ele recebrá os acesso</li>
+        <li> Caso não apareça, entenda o dia que ele fez o envio dos documentos e analisem se cabe chamado para N2</li>
       </ul>
 
-      <p>
-        Verifiquei que sua matrícula foi gerada. Para acessar, entre neste link: <a href="https://sia.estacio.br/sianet/Logon">Portal da Estácio</a>
-        Insira a matrícula: xxx e clique em Esqueci a senha / Cadastrar primeira senha. <br>
-        Me confirme, por favor, se deu certo. Tudo bem?
-      </p>
+      <p><strong>Se a matrícula já estiver gerada, enviem a macro:</strong></p>
+
+      <pre class="fw-bold fs-6"> 
+        Verifiquei que sua matrícula foi gerada. Para acessar, entre no <a href="https://sia.estacio.br/sianet/Logon">Portal da Estácio</a>.
+        Insira a matrícula: <strong>XXX</strong> e clique em <em>Esqueci a senha / Cadastrar primeira senha</em>.
+        Me confirme, por favor, se deu certo.
+      </pre>
 
     </div>
   </div>
 
+  <!-- ================================================= -->
   <!-- FLUXO DE REMATRÍCULA -->
+  <!-- ================================================= -->
+
   <div class="row mb-5">
     <div class="col">
-      <h4 class="fw-semibold">Fluxo de Rematrícula</h4>
+
+      <h4 class="fw-semibold">2. Fluxo de Rematrícula</h4>
 
       <ol>
         <li>O colaborador envia o histórico do semestre concluído no portal da Skill.</li>
@@ -140,87 +146,86 @@
       </ol>
 
       <div class="alert alert-info">
-        <strong>Sempre aplique a macro /Rematrícula | Estácio, que apresenta todo o processo.</strong>
+        <strong>Sempre aplicar a macro /Rematrícula | Estácio</strong>
       </div>
 
-      <pre>
-    Olá andreia! Espero que esteja bem.
+      <pre class="fw-bold fs-6">
+Olá! Espero que esteja bem.
 
-    Entendemos a sua preocupação em relação à sua rematrícula.
-    Para garantir que você siga o fluxo correto e permaneça dentro
-    do programa Skill, é fundamental seguir os seguintes passos:
-    
-    Aceite do Contrato com a Estácio: O primeiro passo é realizar 
-    o aceite do contrato com a Estácio. Fique atento às comunicações 
-    diretas da Estácio para realizar este procedimento.Próximos Passos com a Skill:
-    Os próximos passos para a sua rematrícula e o fluxo dentro do 
-    programa Skill serão comunicados mais perto do segundo semestre. 
-    Você pode ficar tranquilo(a) que informaremos tudo com antecedência.
+Entendemos a sua preocupação em relação à sua rematrícula.
+Para garantir que você siga o fluxo correto e permaneça dentro
+do programa Skill, é fundamental seguir os seguintes passos:
 
-    ATENÇÃO!
-    É muito importante que você NÃO acione a Estácio
-    (seja por WhatsApp, polo ou telefone) para informar sobre o interessena rematrícula
-    ou para tentar realizar o processo por conta própria e NÃO deve realizar nenhum pagamento.
-    Isso pode gerar uma matrícula à parte, o que fará com que você saia do plano e dos benefícios
-    do programa Skill.
-    Se tiver mais alguma dúvida, estamos à disposição!
-    
-    Atenciosamente,
+1. Aceite do contrato com a Estácio.
+2. Aguarde as orientações da Skill para os próximos passos.
+
+ATENÇÃO!
+Não acione a Estácio por WhatsApp, polo ou telefone
+e não realize nenhum pagamento por conta própria.
+Isso pode gerar uma matrícula fora do programa Skill.
+
+Seguimos à disposição!
       </pre>
+
     </div>
   </div>
 
+  <!-- ================================================= -->
   <!-- FLUXO DE CANCELAMENTO -->
+  <!-- ================================================= -->
+
   <div class="row mb-5">
     <div class="col">
-      <h4 class="fw-semibold">Fluxo de Cancelamento</h4>
+
+      <h4 class="fw-semibold">3. Fluxo de Cancelamento</h4>
 
       <div class="alert alert-info">
-        <strong>Se o colaborador já possui matrícula ativa na Estácio:</strong>
+        <strong>Se o colaborador possui matrícula ativa:</strong>
       </div>
 
       <ul>
-        <li>Informe que o cancelamento deve ser solicitado diretamente pela Estácio.</li>
-        <li>Após isso, ele deve enviar o comprovante para prosseguir pela Skill.</li>
+        <li>Informe que o cancelamento deve ser solicitado diretamente à Estácio.</li>
+        <li>Após isso, ele deve enviar o comprovante para a Skill.</li>
+        <li>Com o comprovante, abra um chamado para o time N2.</li>
+        <p class="text-danger mt-2"><strong> NUNCA REALIZE CANCELAMENTO DE GRADUAÇÃO E PÓS-GRADUAÇÃO DA ESTÁCIO</strong></p>
       </ul>
 
       <div class="alert alert-info mt-3">
-        <strong>Se a matrícula não tiver sido gerada:</strong>
+        <strong>Se a matrícula não foi gerada:</strong>
       </div>
 
       <ul>
         <li>Realize verificação interna.</li>
-        <li>Abra chamado para o time <strong>N2</strong>, informando que não há matrícula ativa no SIA.</li>
+        <li>Abra chamado para o time <strong>N2</strong>, informando ausência de matrícula no SIA.</li>
       </ul>
+
     </div>
   </div>
 
+  <!-- ================================================= -->
   <!-- CURSOS LIVRES -->
+  <!-- ================================================= -->
+
   <div class="row">
     <div class="col">
-      <h4 class="fw-semibold">Cursos Livres</h4>
 
-      <p>Para cursos livres da Estácio, o acesso segue o padrão mapeado.</p>
+      <h4 class="fw-semibold">4. Cursos Livres</h4>
+
+      <p>Para cursos livres da Estácio, o acesso segue o fluxo padrão.</p>
 
       <div class="alert alert-info">
-        <strong>Se a matrícula estiver confirmada na Skill e o colaborador não recebeu acesso mande a macro:</strong></p>
-    </div>
+        <strong>Se a matrícula estiver confirmada na Skill e sem acesso, tente enviar o acesso:</strong>
+      </div>
 
-<pre class="w-75">
-Obrigada por aguardar, XXX.
-        
-Você poderia, por gentileza, acessar o link: <span><a href="https://app.profissionalizantes.estacio.br/">Portal da Estácio</a> </span>, 
-entrar com o seu e-mail cadastrado na plataforma: YYYYY e usar a senha padrão:
-12345678? 
+    <pre class="w-75 fw-bold fs-6">
+Acesse o link: <a class="text-decoration-none" href="https://app.profissionalizantes.estacio.br/"> https://app.profissionalizantes.estacio.br/ </a>
+Entre com seu e-mail seu cadastrado cadastrado: xxx, e a senha padrão: 12345678
+Depois, me confirme se deu certo.
+    </pre>
 
-Depois, me confirme se deu certo. 
-
-</pre>
- 
-<p class="text-danger">Caso o colaborador não consiga acessar por algum problema, tente realizar o reset de senha, se ainda assim der problema, abra chamado para o time de N2</p>
-
-
-    
+    <p class="text-danger fw-semibold">
+        Caso de algum erro, tente realizar o reset de senha. Se o problema persistir, verifiquem a data de solicitação e analisem se convém abrir chamado para o time <strong>N2</strong>.
+      </p>
 
       <div class="alert alert-info mt-3">
         <strong>Se o colaborador não conseguir cancelar o curso:</strong>
@@ -228,12 +233,30 @@ Depois, me confirme se deu certo.
 
       <ul>
         <li>Solicite evidência do erro (print).</li>
-        <li>Realize o cancelamento pela Skill (N1).</li>
-        <li>Registre o número do ticket nas observações internas do ADMIN.</li>
+        <li>Realize o cancelamento pela plataforma Skill ADMIN. </li>
+        <li>Registre o número do ticket nas observações do ADMIN.</li>
       </ul>
+      <p class="fw-semibold text-danger">Em cursos livres o N1 pode realizar cancelamentos apenas em casos específicos e com as evidências necessárias.</p>
     </div>
   </div>
+
 </section>
+
+<style>
+
+/* Remove borda APENAS das divs que envolvem imagens */
+div.border img {
+  border: none;
+}
+
+div.border {
+  border: none !important;
+}
+
+body{
+  background-color: rgb(217, 230, 247);
+}
+</style>
 
 </body>
 </html>
