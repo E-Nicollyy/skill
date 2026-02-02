@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descomplica</title>
+
+  <link rel="icon" href="../icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    alert("Atenção: Essa página ainda está em fase de construção e pode conter informações incompletas ou confusas. Pergunte caso tenha dúvidas");
+  });
+</script>
+
+
+<body>
+
+<section class="container my-5 text-black">
+
+  <!-- CABEÇALHO -->
+  <div class="row mb-5">
+    <div class="col text-center">
+      <h2 class="fw-bold">Fluxos de Atendimento – Descomplica</h2>
+      <p class="text-muted">
+        Manual operacional para graduação, pós-graduação e cancelamento
+      </p>
+    </div>
+  </div>
+
+  <!-- FLUXO DESCOMPLICA -->
+  <div class="row mb-5">
+    <div class="col">
+
+
+      <p>
+        A Descomplica envia automaticamente um <strong>e-mail ao colaborador</strong>
+        contendo todas as instruções necessárias para realização da matrícula,
+        incluindo o passo a passo completo do processo.
+      </p>
+
+      <!-- GRADUAÇÃO -->
+      <div class="alert alert-primary mt-4">
+        <strong>Graduação — Matrícula confirmada, mas sem acesso</strong>
+      </div>
+
+      <p>
+        Quando a matrícula estiver <strong>confirmada na Skill</strong>, mas o colaborador
+        informar que não recebeu os dados de acesso, é necessário consultar a
+        <strong>base de conhecimento</strong> e encaminhar o
+        <strong>link padrão com cupom</strong> disponibilizado pela Descomplica.
+      </p>
+
+      <!-- ERROS GRADUAÇÃO -->
+      <div class="alert alert-primary mt-4">
+        <strong>Graduação — Erros de matrícula ou acesso</strong>
+      </div>
+
+      <p>
+        Em situações que envolvam erro de matrícula, falha no envio de documentos
+        ou problemas técnicos de acesso, é fundamental solicitar
+        <strong>prints e evidências</strong> para análise do cenário.
+      </p>
+
+      <p>
+        Com base nas informações recebidas, avalie se o caso se enquadra
+        para <strong>abertura de chamado N2</strong>.
+      </p>
+
+      <!-- PÓS -->
+      <div class="alert alert-primary mt-4">
+        <strong>Pós-graduação — Processo via link único</strong>
+      </div>
+
+      <p>
+        Para cursos de <strong>pós-graduação</strong>, a Descomplica disponibiliza
+        um <strong>link único</strong> contendo todas as instruções de matrícula.
+        É importante orientar o colaborador a concluir todo o processo
+        de uma única vez.
+      </p>
+
+      <ul>
+        <li class="text-white">Caso o processo seja interrompido e retomado posteriormente, o link pode apresentar erro ou ficar indisponível.
+        <li class="text-white">Em casos de assim faça testes de navegador, dipostivo ou aba anônima, caso ainda falhe, abra um chamado N2</li>
+    
+      </ul>
+
+      <!-- PÓS ERRO -->
+      <div class="alert alert-primary mt-4">
+        <strong>Pós-graduação — Acesso recebido, mas matrícula não concluída</strong>
+      </div>
+
+      <p>
+        Se o colaborador informar que recebeu o acesso, mas não conseguiu concluir
+        a matrícula, solicite prints do erro apresentado e confirme o e-mail que ele
+        utilizou no processo.
+      </p>
+
+      <ul>
+        <li class="text-white">
+        Oriente testes em outro navegador, em aba anônima ou em outro dispositivo.
+        Persistindo o erro, realize a <strong>abertura de chamado</strong>. </li>
+      </ul>
+
+      <!-- NÃO RECEBEU EMAIL -->
+      <div class="alert alert-primary mt-4">
+        <strong>Pós-graduação — Não recebeu o e-mail com orientações</strong>
+      </div>
+
+      <p>
+        Oriente o colaborador a verificar a caixa de spam e lixo eletrônico.
+        Caso o e-mail não seja localizado, pergunte se fez algum envio de documentos. Confirme se já se passaram
+        <strong>7 dias</strong> desde a solicitação e se a matrícula consta
+        como <strong>confirmada na Skill</strong>.
+      </p>
+
+      <ul>
+        <li class="text-white">
+        Estando todas as condições atendidas, siga com a <strong>abertura de chamado</strong>.</li>
+      </ul>
+
+      <!-- CANCELAMENTO -->
+      <div class="alert alert-primary mt-4">
+        <strong>Cancelamento — Descomplica</strong>
+      </div>
+
+      <p>
+        O cancelamento de cursos da Descomplica ocorre normalmente, sem restrições.
+        Após a conclusão do cancelamento, a categoria correspondente ficará
+        <strong>desbloqueada</strong> para novas solicitações do colaborador.
+      </p>
+
+    </div>
+  </div>
+
+</section>
+
+<style>
+  body {
+    background-color: #052b1b; /* fundo dark */
+    color: #e5e7eb; /* texto claro */
+  }
+
+  h2, h4 {
+    color: #22c55e; /* verde principal */
+  }
+
+  p {
+    color: #e5e7eb;
+  }
+
+  .text-muted {
+    color: #9ca3af !important;
+  }
+
+  /* Alerts personalizados */
+  .alert-primary {
+    background-color: #14532d; /* verde escuro */
+    color: #dcfce7; /* verde claro */
+    border: none;
+  }
+
+  /* Container mais elegante */
+  section.container {
+    background-color: #052b1b;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Títulos menores */
+  h4 {
+    border-left: 4px solid #22c55e;
+    padding-left: 12px;
+  }
+</style>
+
+</body>
+</html>
